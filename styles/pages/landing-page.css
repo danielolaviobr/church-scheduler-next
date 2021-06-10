@@ -1,0 +1,123 @@
+#landing-page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing-page .content-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 650px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url("/images/logo-sem-fundo-black.png") no-repeat 120% center;
+  background-size: 600px;
+}
+
+#landing-page .content-wrapper main {
+  max-width: 500px;
+}
+
+#landing-page .content-wrapper main h1 {
+  font-weight: bold;
+  font-size: 76px;
+  line-height: 88px;
+}
+
+#landing-page .content-wrapper main p {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 29px;
+}
+
+#landing-page .content-wrapper footer {
+  font-weight: 700;
+  flex-direction: row;
+  display: flex;
+}
+
+#landing-page .content-wrapper footer .redirect-button {
+  font-size: 36px;
+
+  width: 200px;
+  height: 70px;
+  background: #279ece;
+  margin-right: 40px;
+
+  color: #fff;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+#landing-page .content-wrapper footer .redirect-button:hover {
+  background: #2db1e6;
+}
+
+@media only screen and (max-width: 1000px) {
+  #landing-page .content-wrapper {
+    position: relative;
+
+    padding: 20px;
+
+    width: 100%;
+    /* max-width: 1000px; */
+
+    height: 100%;
+    /* max-height: 650px; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: none;
+  }
+
+  #landing-page .content-wrapper main h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  #landing-page .content-wrapper main p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 29px;
+  }
+
+  #landing-page .content-wrapper footer {
+    font-weight: 700;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #landing-page .content-wrapper footer .redirect-button {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+}

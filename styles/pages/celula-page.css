@@ -1,0 +1,92 @@
+#celula-page {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#celula-page .logo {
+  position: absolute;
+
+  left: 20px;
+  top: 20px;
+}
+
+#celula-page main {
+  background: #fff;
+
+  height: 600px;
+  width: 450px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#celula-page main .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#celula-page main input {
+  height: 40px;
+  width: 340px;
+  padding: 10px;
+
+  font-weight: 200;
+  font-size: 16px;
+
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+#celula-page main .confirm {
+  height: 40px;
+  width: 340px;
+  padding: 10px;
+
+  background: #279ece;
+  color: #fff;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+#celula-page main .confirm:hover {
+  background: #2db1e6;
+}
+
+#celula-page main .cancel {
+  height: 40px;
+  padding: 10px;
+
+  color: #279ece;
+
+  border-radius: 5px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

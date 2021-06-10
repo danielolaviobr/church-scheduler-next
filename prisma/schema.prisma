@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Celula {
+  id           Int    @id @default(autoincrement())
+  name         String
+  scheduled_to String
+
+  @@map("celula")
+}
+
+model MaxCapacity {
+  id           Int    @id @default(autoincrement())
+  event        String @unique
+  max_capacity Int
+
+  @@map("max_capacity")
+}

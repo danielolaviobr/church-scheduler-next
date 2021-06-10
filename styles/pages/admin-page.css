@@ -1,0 +1,134 @@
+#admin-page {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#admin-page .content-wrapper {
+  background: #fff;
+
+  height: 750px;
+  width: 450px;
+
+  border-radius: 10px;
+
+  padding: 30px;
+
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: column;
+  align-items: center;
+  justify-content: top;
+}
+
+/* .react-datepicker-wrapper, */
+/* .react-datepicker__input-container, */
+.react-datepicker__input-container input {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.react-datepicker__close-icon::after {
+  background: none;
+
+  color: #000;
+  font-size: 30px;
+}
+
+#admin-page .content-wrapper header {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+#admin-page .content-wrapper p {
+  padding-bottom: 15px;
+}
+
+#admin-page .content-wrapper .action-button {
+  height: 40px;
+  width: 340px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  background: #279ece;
+  color: #fff;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+
+  cursor: pointer;
+}
+
+#admin-page .content-wrapper .action-button:hover {
+  background: #2db1e6;
+}
+
+#admin-page .content-wrapper .events {
+  width: 400px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#admin-page .content-wrapper .event-button {
+  height: 40px;
+  width: 40%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  background: #9e30d1;
+  color: #fff;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+
+  cursor: pointer;
+}
+
+#admin-page .content-wrapper .event-button:hover {
+  background: #b438ee;
+}
+
+#admin-page .content-wrapper input {
+  height: 40px;
+  width: 340px;
+  padding: 10px;
+
+  font-weight: 200;
+  font-size: 16px;
+
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
